@@ -42,7 +42,7 @@ dependencies {
 	
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
-	implementation(files("tmp/io.github.flaviolionelrita.lambdaorm.client-1.1.0.jar"))
+	implementation(files("./tmp/io.github.flaviolionelrita.lambdaorm.client-1.1.6.jar"))
 	
 
 }

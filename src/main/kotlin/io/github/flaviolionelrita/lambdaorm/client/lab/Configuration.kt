@@ -9,5 +9,5 @@ import io.github.flaviolionelrita.lambdaorm.client.OrmClient
 class Configuration {
 
     @Bean
-    fun ormClient(): OrmClient = OrmClient("http://localhost:9291",null)
+    fun ormClient(): OrmClient = OrmClient("http://localhost:9291")
 }

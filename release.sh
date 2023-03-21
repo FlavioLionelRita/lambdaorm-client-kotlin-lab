@@ -16,6 +16,7 @@ if [ $SOURCE_BRANCH == 'develop' ]; then
     git push
     # create branch release and push image
     git checkout -b release
+    gradle clean build
     docker login -u flaviorita -p $DOCKER_IO_PWD
     docker build -t flaviorita/${APP_NAME}:${VERSION} .
     docker push flaviorita/${APP_NAME}:${VERSION}

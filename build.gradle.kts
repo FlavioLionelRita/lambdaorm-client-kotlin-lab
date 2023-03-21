@@ -8,9 +8,7 @@ plugins {
 }
 
 group = "io.github.flaviolionelrita"
-version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
-// java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
@@ -29,22 +27,18 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
 	// springdoc
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
- 
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin") 
 	implementation("org.springdoc:springdoc-openapi-data-rest:1.6.4")
     implementation("org.springdoc:springdoc-openapi-ui:1.6.4")
     implementation("org.springdoc:springdoc-openapi-kotlin:1.6.4")  
-	// implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0") 
-	 implementation("io.micrometer:micrometer-registry-prometheus")
+	implementation("io.micrometer:micrometer-registry-prometheus")
 	//Json
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-	//Test
-	
+	//Test	
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
+	// LambdaOrm
 	implementation(files("./tmp/io.github.flaviolionelrita.lambdaorm.client-1.1.6.jar"))
-	
-
 }
 
 tasks.withType<KotlinCompile> {
